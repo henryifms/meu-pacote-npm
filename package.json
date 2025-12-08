@@ -1,0 +1,20 @@
+{
+  "name": "@henryifms/meu-pacote-npm",
+  "version": "1.0.0",
+  "description": "Aprendendo a criar um pacote npm meu",
+  "keywords": [
+    "npm",
+    "node"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/henryifms/meu-pacote-npm"
+  },
+  "license": "MIT",
+  "author": "Henry Thomaz Oliveira Campos",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
