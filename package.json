@@ -1,6 +1,10 @@
 {
   "name": "@henryifms/meu-pacote-npm",
-  "version": "1.0.0",
+  "team" : "ifms",
+  "version": "1.1.0",
+  "publishConfig": {
+    "access": "public"
+  },
   "description": "Aprendendo a criar um pacote npm meu",
   "keywords": [
     "npm",
