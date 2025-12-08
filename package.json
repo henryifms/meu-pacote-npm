@@ -1,6 +1,6 @@
 {
   "name": "@henryifms/meu-pacote-npm",
-  "team" : "henryifms",
+  "team": "henryifms",
   "version": "1.3.0",
   "publishConfig": {
     "access": "public"
@@ -19,7 +19,10 @@
   "type": "module",
   "main": "src/server.js",
   "scripts": {
-  "server": "node .",
-  "start": "yarn run server"
+    "server": "node .",
+    "start": "yarn run server"
+  },
+  "dependencies": {
+    "express": "^5.2.1"
   }
 }
