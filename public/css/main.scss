@@ -1,0 +1,79 @@
+@use "base" as vars;
+
+// @mixin box-shadow($color) {
+//     box-shadow: 3px 3px 4px -1px rgba($color, 0.8);
+// }
+// @mixin text-effect($val) {
+//     @if $val == danger {
+//         color: red;
+//     }
+//     @else if $val == alert {
+//         color: yellow;
+//     }
+//     @else {
+//         color: black;
+//     }
+// }
+// body {
+//     background-color: $text-color2;
+// }
+// h1 {
+//     color: $text-color3;
+// }
+// .container {
+//     @include box-shadow($text-color3);
+//     width: 200px;
+//     height: 200px;
+//     background-color: $text-color;
+    
+//     p {
+//         @include box-shadow(rgba(0,0,0,0.6));
+//         background-color: gray;
+//         width: 100px;
+//         height: 100px;
+//         text-align: center;
+//         color: $text-color4;
+//         @include text-effect(alert)
+//     }
+// }
+
+// @for $i from 1 through 5 {
+//     .text-#{$i} {
+//         font-size: 15px * $i;
+//     }
+// }
+
+// $colors: (color1: blue, color2: red, color3: yellow);
+
+// @each $key, $color in $colors {
+//     .#{$color}-text {
+//         color: $color;
+//     }
+// }
+
+$colors: blue, red, yellow;
+
+@each $color in $colors {
+    .#{$color}-text {
+        color: $color;
+    }
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body {
+    @extend .flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    background-color: vars.$text-color2;
+}
+p {
+    &:hover {
+        color: white;
+        cursor: pointer;
+    }
+}
